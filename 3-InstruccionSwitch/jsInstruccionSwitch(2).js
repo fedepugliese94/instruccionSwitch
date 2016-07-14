@@ -95,7 +95,15 @@ function Mostrar()
 				alert("Ya paso el fio, ahora calor");
 			break;
 
-			case "Oc"
+			case "Octubre":
+				alert("Ya paso el frio, ahora calor");
+			break;
+			
+			case "Noviembre":
+			case "Diciembre":
+				alert("Ya paso el frio, ahora calor");
+			break;
+					
 
 
 

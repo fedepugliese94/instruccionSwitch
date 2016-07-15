@@ -38,7 +38,7 @@ function CalcularPrecio ()
  							{
  								descuento = 0.60;
  							}
- 							else (cantidad >= 6) 
+ 							else (cantidad > 5) 
  								{
  									descuento = 0.50;
  								}
@@ -69,14 +69,59 @@ function CalcularPrecio ()
  			case "JeLuz":
  				if (cantidad = 3) 
  					{
+ 						descuento = 0.95;
 
  					}
+ 					else (cantidad = 4)
+ 						{
+ 							descuento = 0.80;
+ 						}
+ 						if (cantidad = 5) 
+ 							{
+ 								descuento = 0.70;
+ 							}
+ 							else (cantidad > 5)
+ 								{
+ 									descuento = 0.5;
+ 								}
  			break;
 
  			case "HazIluminacion":
- 			break;
+ 				if (cantidad = 3) 
+ 					{
+ 						descuento = 0.95;
+ 					}
+ 					else (cantidad = 4)
+ 						{
+ 							descuento = 0.80;
+ 						}
+ 						if (cantidad = 5) 
+ 							{
+ 								descuento = 0.70;
+ 							}
+ 							else (cantidad > 5)
+ 								{
+ 									descuento = 0.5;
+ 								}
+			break;
 
  			case "Osram":
+ 				if (cantidad = 3) 
+ 					{
+ 						descuento = 0.95;
+ 					}
+ 					else (cantidad = 4)
+ 						{
+ 							descuento = 0.80;
+ 						}
+ 						if (cantidad = 5) 
+ 							{
+ 								descuento = 0.70;
+ 							}
+ 							else (cantidad > 5)
+ 								{
+ 									descuento = 0.5;
+ 								}
  			break;
 
 
@@ -86,6 +131,11 @@ function CalcularPrecio ()
 
  		precioNeto = precioBruto * descuento;
 		precioDescuento = document.getElementById('precioDescuento').value=precioNeto;
+		/*if (precioDescuento > 120) 
+ 			{
+ 				precioDescuento*0.90;
+ 			}*/
+
 }//function CalcularPrecio
 
 
@@ -103,5 +153,5 @@ function CalcularPrecio ()
 							descuento=0.6;
 						break;	
 					}
-			};
-		}
+			}
+		}*/
